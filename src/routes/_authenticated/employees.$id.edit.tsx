@@ -77,7 +77,10 @@ function EditEmployee() {
             .from("employees" as never)
             .update(payload as never)
             .eq("id", id);
-          if (error) return toast.error(error.message);
+          if (error) {
+            toast.error(error.message);
+            return;
+          }
           await logActivity(
             "Updated employee",
             `${values.full_name} (${values.employee_id})`,
