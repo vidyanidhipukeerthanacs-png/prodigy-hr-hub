@@ -44,7 +44,10 @@ function NewEmployee() {
             .insert(payload as never)
             .select()
             .single();
-          if (error) return toast.error(error.message);
+          if (error) {
+            toast.error(error.message);
+            return;
+          }
           await logActivity(
             "Added employee",
             `${values.full_name} (${values.employee_id})`,
