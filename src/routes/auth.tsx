@@ -71,12 +71,13 @@ function AuthPage() {
       <div className="w-full max-w-md">
         <Link
           to="/"
-          className="mb-4 inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
+          className="mb-4 inline-flex items-center gap-1 text-sm text-white/70 hover:text-white"
         >
           <ArrowLeft className="h-3.5 w-3.5" /> Back to home
         </Link>
 
-        <div className="rounded-3xl border bg-card/90 p-7 shadow-brand backdrop-blur">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-[0_20px_80px_-20px_rgba(139,92,246,0.5)] backdrop-blur-xl text-foreground">
+
           <div className="mb-6 flex items-center gap-3">
             <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-brand text-primary-foreground shadow-brand">
               <Sparkles className="h-5 w-5" />
