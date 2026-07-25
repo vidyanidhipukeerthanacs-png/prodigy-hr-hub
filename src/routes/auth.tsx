@@ -164,6 +164,7 @@ function LoginForm() {
 }
 
 function SignupForm({ onCreated }: { onCreated: () => void }) {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPw, setShowPw] = useState(false);
@@ -182,10 +183,22 @@ function SignupForm({ onCreated }: { onCreated: () => void }) {
       password: pwR.data,
       options: { emailRedirectTo: `${window.location.origin}/dashboard` },
     });
+    if (error) {
+      setLoading(false);
+      return toast.error(error.message);
+    }
+    const { error: signInErr } = await supabase.auth.signInWithPassword({
+      email: emailR.data,
+      password: pwR.data,
+    });
     setLoading(false);
-    if (error) return toast.error(error.message);
-    toast.success("Admin account created — you can sign in now.");
-    onCreated();
+    if (signInErr) {
+      toast.success("Account created — please sign in.");
+      onCreated();
+      return;
+    }
+    toast.success("Welcome to Prodigy EMS!");
+    navigate({ to: "/dashboard", replace: true });
   };
 
   return (
