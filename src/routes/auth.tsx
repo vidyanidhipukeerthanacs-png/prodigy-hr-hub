@@ -102,7 +102,7 @@ function AuthPage() {
           </Tabs>
         </div>
 
-        <p className="mt-6 text-center text-xs text-muted-foreground">
+        <p className="mt-6 text-center text-xs text-white/60">
           Prodigy Infotech · Task 02 — Employee Management System
         </p>
       </div>
