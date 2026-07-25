@@ -45,11 +45,28 @@ function AuthPage() {
   }, [navigate]);
 
   return (
-    <div className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10">
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -top-32 -left-32 h-[500px] w-[500px] rounded-full bg-gradient-brand opacity-30 blur-3xl" />
-        <div className="absolute -bottom-32 -right-32 h-[500px] w-[500px] rounded-full bg-gradient-brand-soft opacity-70 blur-3xl" />
+    <div className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 bg-[#0b0616] text-white">
+      {/* Unique animated aurora + grid background */}
+      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,#4c1d95_0%,transparent_55%),radial-gradient(ellipse_at_bottom_right,#1e3a8a_0%,transparent_55%),radial-gradient(circle_at_center,#7c3aed22_0%,transparent_60%)]" />
+        <div
+          className="absolute -top-40 left-1/2 h-[700px] w-[700px] -translate-x-1/2 rounded-full opacity-40 blur-3xl animate-[spin_28s_linear_infinite]"
+          style={{ background: "conic-gradient(from 0deg, #8b5cf6, #3b82f6, #06b6d4, #8b5cf6)" }}
+        />
+        <div
+          className="absolute inset-0 opacity-[0.08]"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px)",
+            backgroundSize: "42px 42px",
+            maskImage: "radial-gradient(ellipse at center, black 40%, transparent 75%)",
+          }}
+        />
+        <div className="absolute top-10 left-10 h-2 w-2 rounded-full bg-white/70 animate-pulse" />
+        <div className="absolute bottom-16 right-24 h-1.5 w-1.5 rounded-full bg-cyan-300/80 animate-pulse [animation-delay:600ms]" />
+        <div className="absolute top-1/3 right-10 h-1 w-1 rounded-full bg-fuchsia-300/80 animate-pulse [animation-delay:1200ms]" />
       </div>
+
 
       <div className="w-full max-w-md">
         <Link
