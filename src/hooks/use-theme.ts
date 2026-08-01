@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const KEY = "prodigy-ems-theme";
+const KEY = "workforce-pro-theme";
 
 export function useTheme() {
   const [theme, setTheme] = useState<"light" | "dark">("light");

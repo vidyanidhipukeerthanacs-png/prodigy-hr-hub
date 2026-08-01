@@ -76,14 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Prodigy EMS — Employee Management System" },
+      { title: "WorkForce Pro — Employee Management System" },
       {
         name: "description",
         content:
-          "A modern, secure Employee Management System built for Prodigy Infotech Task-02. Manage teams, roles, and payroll from a beautiful admin dashboard.",
+          "A modern, secure Employee Management System built with WorkForce Pro. Manage teams, roles, and payroll from a beautiful admin dashboard.",
       },
-      { name: "author", content: "Prodigy Infotech Task-02" },
-      { property: "og:title", content: "Prodigy EMS — Employee Management System" },
+      { name: "author", content: "WorkForce Pro" },
+      { property: "og:title", content: "WorkForce Pro — Employee Management System" },
       {
         property: "og:description",
         content:

@@ -4,13 +4,13 @@ import { ArrowRight, ShieldCheck, Users, BarChart3, Sparkles } from "lucide-reac
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Prodigy EMS — Modern Employee Management System" },
+      { title: "WorkForce Pro — Modern Employee Management System" },
       {
         name: "description",
         content:
-          "Welcome to the Prodigy Infotech Employee Management System. Sign in as an admin to manage employees, departments, roles, and activities.",
+          "Welcome to WorkForce Pro. Sign in as an admin to manage employees, departments, roles, and activities.",
       },
-      { property: "og:title", content: "Prodigy EMS — Welcome" },
+      { property: "og:title", content: "WorkForce Pro — Welcome" },
       {
         property: "og:description",
         content: "Secure admin dashboard for managing your workforce.",
@@ -34,7 +34,7 @@ function Landing() {
           <div className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-brand text-primary-foreground shadow-brand">
             <Sparkles className="h-4 w-4" />
           </div>
-          <span className="text-lg font-black tracking-tight">Prodigy EMS</span>
+          <span className="text-lg font-black tracking-tight">WorkForce Pro</span>
         </div>
         <Link
           to="/auth"
@@ -48,7 +48,7 @@ function Landing() {
         <section className="grid gap-12 lg:grid-cols-[1.15fr_1fr] lg:items-center">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
-              <ShieldCheck className="h-3.5 w-3.5" /> Prodigy Infotech · Task 02
+              <ShieldCheck className="h-3.5 w-3.5" /> Modern Workforce Platform
             </span>
             <h1 className="mt-5 text-4xl font-black tracking-tight sm:text-6xl">
               Welcome to the{" "}
@@ -127,7 +127,7 @@ function Landing() {
 
       <footer className="border-t bg-background/60 backdrop-blur">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-6 text-sm text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} Prodigy Infotech · Task 02</p>
+          <p>© {new Date().getFullYear()} WorkForce Pro</p>
           <p>Employee Management System</p>
         </div>
       </footer>

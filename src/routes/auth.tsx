@@ -13,12 +13,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 export const Route = createFileRoute("/auth")({
   head: () => ({
     meta: [
-      { title: "Sign in — Prodigy EMS" },
+      { title: "Sign in — WorkForce Pro" },
       {
         name: "description",
-        content: "Sign in or create an admin account for Prodigy EMS.",
+        content: "Sign in or create an admin account for WorkForce Pro.",
       },
-      { property: "og:title", content: "Prodigy EMS — Admin Sign in" },
+      { property: "og:title", content: "WorkForce Pro — Admin Sign in" },
       {
         property: "og:description",
         content: "Secure admin authentication for the Employee Management System.",
@@ -65,7 +65,7 @@ function AuthPage() {
               <Sparkles className="h-5 w-5" />
             </div>
             <div>
-              <h1 className="text-lg font-bold">Prodigy EMS</h1>
+              <h1 className="text-lg font-bold">WorkForce Pro</h1>
               <p className="text-xs text-muted-foreground">Admin authentication</p>
             </div>
           </div>
@@ -85,7 +85,7 @@ function AuthPage() {
         </div>
 
         <p className="mt-6 text-center text-xs text-muted-foreground">
-          Prodigy Infotech · Task 02 — Employee Management System
+          WorkForce Pro — Employee Management System
         </p>
       </div>
     </div>
@@ -125,7 +125,7 @@ function LoginForm() {
           id="l-email"
           type="email"
           autoComplete="email"
-          placeholder="admin@prodigy.dev"
+          placeholder="admin@workforcepro.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -196,7 +196,7 @@ function SignupForm({ onCreated }: { onCreated: () => void }) {
           id="s-email"
           type="email"
           autoComplete="email"
-          placeholder="admin@prodigy.dev"
+          placeholder="admin@workforcepro.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
