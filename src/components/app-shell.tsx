@@ -67,7 +67,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               <Sparkles className="h-4 w-4" />
             </div>
             <div>
-              <div className="text-sm font-black leading-none">Prodigy EMS</div>
+              <div className="text-sm font-black leading-none">WorkForce Pro</div>
               <div className="mt-1 text-[10px] uppercase tracking-widest text-muted-foreground">
                 Admin Console
               </div>
@@ -176,7 +176,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <main className="flex-1 px-4 py-6 lg:px-8 lg:py-8">{children}</main>
 
         <footer className="border-t bg-background/60 px-4 py-4 text-center text-xs text-muted-foreground lg:px-8">
-          Prodigy Infotech · Task 02 — Employee Management System
+          WorkForce Pro — Employee Management System
         </footer>
       </div>
     </div>
